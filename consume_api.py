@@ -28,6 +28,7 @@ try:
         print(f"Link: {data['link']}")
         print("-" * 50)
 
+#exceptions to catch errors with the API request and JSON parsing
 except requests.exceptions.RequestException as e:
     print(f"Error making API request: {e}")
 except json.JSONDecodeError as e:
